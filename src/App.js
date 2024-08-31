@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Item from './Item';
 import './App.css';
 
-const Design = { color: "red", textAlign: "center" };
+const Design = { color: "black", textAlign: "center" };
 
 const Title = () => <h1 style={Design}>บัญชีรายรับรายจ่าย</h1>;
 const Description = () => <p>บันทึกข้อมูลบัญชีในแต่ละวัน</p>;
@@ -53,9 +53,9 @@ const Transaction = ({ transactions }) => {
 
 function App() {
   const [transactions, setTransactions] = useState([
-    { title: "ค่าอาหาร", amount: "500" },
-    { title: "ค่าเดินทาง", amount: "300" },
-    { title: "ค่าเช่าบ้าน", amount: "1000" },
+    { title: "ค่าอาหาร", amount: "-500" },
+    { title: "ค่าเดินทาง", amount: "-300" },
+    { title: "ค่าเช่าบ้าน", amount: "-1000" },
   ]);
 
   const addTransaction = (transaction) => {
