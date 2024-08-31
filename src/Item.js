@@ -1,13 +1,12 @@
+import React from 'react';
 import './Item.css';
 
-const Item = () => {
-    const name = "ที่พัก";
-    const amount = 1000;
-    return (
-        <li className='item'>
-            {name} <span>-{amount}</span>
-        </li>
-    );
+const Item = ({ title, amount }) => {
+  return (
+    <li className='item'>
+      {title} <span>{amount}</span>
+    </li>
+  );
 }
 
 export default Item;
